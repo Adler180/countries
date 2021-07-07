@@ -3,19 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>Randomländer</title>
+
+    <style>
+.center {
+  margin: auto;
+  width: 15%;
+  padding: 10px;
+}
+
+.al {
+  height: 50px;
+  width: 50%;
+  background-color: lightblue;
+}
+
+h2 {
+  text-align: center;
+}
+
+input {
+  align-items: center;
+}
+
+</style>
   </head>
   <body>
-
+<div class="center" style="text-align:center">
 <!-- Reset -->
     <input type="button" value="Reset"  onclick="reset();" />
     <br>
 
-    <!-- Ozeanien -->
+    <input type="button" value="All" class="al" onclick="Nord();South();Euro();Asia();Afri();Ozea();" />
 
-<h2 id="Ozeanien" class="align-center pb-3 mbr-fonts-style display-2">Ozeanien
-                    </h2>
-
-<input type="button" value="Ozeanien"  onclick="Ozea();" />
 
 <!-- Nordamerika -->
 
@@ -47,7 +66,22 @@
                     </h2>
 <input type="button" value="Afrika"  onclick="Afri();" />
 
+<!-- Ozeanien -->
+
+<h2 id="Ozeanien" class="align-center pb-3 mbr-fonts-style display-2">Ozeanien
+                </h2>
+
+<input type="button" value="Ozeanien"  onclick="Ozea();" />
+
+</div>
+
 <script>
+
+function pushbtn(event) {
+  Nord();South();Euro();Asia();Afri();Ozea();
+}
+
+document.addEventListener('keypress', pushbtn);
 
 //Ozeanien
 
@@ -168,7 +202,9 @@
     Afrika.innerText = "Afrika";
   }
 
+
+
    </script>
- 
+
   </body>
 </html>
