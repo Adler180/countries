@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Randomländer</title>
+  </head>
+  <body>
+
+<!-- Reset -->
+    <input type="button" value="Reset"  onclick="reset();" />
+    <br>
+
+    <!-- Ozeanien -->
+
+<h2 id="Ozeanien" class="align-center pb-3 mbr-fonts-style display-2">Ozeanien
+                    </h2>
+
+<input type="button" value="Ozeanien"  onclick="Ozea();" />
+
+<!-- Nordamerika -->
+
+<h2 id="NordAmerika" class="align-center pb-3 mbr-fonts-style display-2">Nordamerika
+                    </h2>
+<input type="button" value="Nordamerika"  onclick="Nord();" />
+
+<!-- Südamerika -->
+
+<h2 id="SouthAmerika" class="align-center pb-3 mbr-fonts-style display-2">Südamerika
+                    </h2>
+<input type="button" value="Südamerika"  onclick="South();" />
+
+<!-- Europa -->
+
+<h2 id="Europa" class="align-center pb-3 mbr-fonts-style display-2">Europa
+                    </h2>
+<input type="button" value="Europa"  onclick="Euro();" />
+
+<!-- Asien -->
+
+<h2 id="Asien" class="align-center pb-3 mbr-fonts-style display-2">Asien
+                    </h2>
+<input type="button" value="Asien"  onclick="Asia();" />
+
+<!-- Afrika -->
+
+<h2 id="Afrika" class="align-center pb-3 mbr-fonts-style display-2">Afrika
+                    </h2>
+<input type="button" value="Afrika"  onclick="Afri();" />
+
+<script>
+
+//Ozeanien
+
+  function Ozea(){
+
+   var Ozeanische = [
+ "Australien",
+ "Neuseeland",
+ "Papua-Neuguinea"
+ ];
+
+ var randomOzea = Ozeanische[Math.floor(Math.random()*Ozeanische.length)];
+  Ozeanien.innerText = randomOzea;
+
+  }
+
+
+//Nordamerika
+
+  function Nord(){
+
+   var Nordamerikanische = [
+ "Costa Rica",
+ "Mexiko",
+ "Kanada",
+ "Vereinigte Staaten von Amerika",
+ "Kuba"
+ ];
+
+ var randomNord = Nordamerikanische[Math.floor(Math.random()*Nordamerikanische.length)];
+  NordAmerika.innerText = randomNord;
+
+  }
+
+
+  //Südamerika
+
+    function South(){
+
+     var Southamerikanische = [
+   "Bolivien",
+   "Argentinien",
+   "Venezuela ",
+   "Peru",
+   "Chile"
+   ];
+
+   var randomSouth = Southamerikanische[Math.floor(Math.random()*Southamerikanische.length)];
+    SouthAmerika.innerText = randomSouth;
+
+    }
+
+
+    //Europa
+
+      function Euro(){
+
+       var Europische = [
+     "Litauen",
+     "Irland",
+     "Deutschland",
+     "Portugal",
+     "Island",
+     "Italien"
+     ];
+
+     var randomEuro = Europische[Math.floor(Math.random()*Europische.length)];
+      Europa.innerText = randomEuro;
+
+      }
+
+
+    //Asien
+
+      function Asia(){
+
+       var Asiische = [
+     "Mongolei",
+     "Kasachstan",
+     "Russland",
+     "Indonesien",
+     "Türkei",
+     "Jemen"
+     ];
+
+     var randomAsia = Asiische[Math.floor(Math.random()*Asiische.length)];
+      Asien.innerText = randomAsia;
+
+      }
+
+
+      //Asien
+
+        function Afri(){
+
+         var Afrikanische = [
+       "Madagaskar",
+       "Ghana",
+       "Algerien",
+       "Tschad",
+       "Simbabwe"
+       ];
+
+       var randomAfri = Afrikanische[Math.floor(Math.random()*Afrikanische.length)];
+        Afrika.innerText = randomAfri;
+
+        }
+
+
+
+  function reset(){
+
+    Ozeanien.innerText = "Ozeanien";
+    NordAmerika.innerText = "Nordamerika";
+    SouthAmerika.innerText = "Südamerika";
+    Europa.innerText = "Europa";
+    Asien.innerText = "Asien";
+    Afrika.innerText = "Afrika";
+  }
+
+   </script>
+ 
+  </body>
+</html>
